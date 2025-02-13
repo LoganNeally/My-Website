@@ -20,6 +20,7 @@
 	// Floating UI for Popups
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
 	import { storePopup } from '@skeletonlabs/skeleton';
+	import Computericon from '$lib/components/Computericon.svelte';
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 </script>
 
@@ -29,12 +30,13 @@
 		<!-- App Bar -->
 		<AppBar>
 			<svelte:fragment slot="lead">
-				<strong class="text-xl uppercase">loganneallyit.net</strong>
+				<strong style="color:chocolate;" class="text-xl uppercase flex gap-2"
+					>loganneallyit.net <Computericon size={30}></Computericon></strong
+				>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
-				
 				<a
-					class="btn btn-sm variant-ghost-surface"
+					class="btn btn-sm variant-ghost-secondary"
 					href="https://github.com/LoganNeally"
 					target="_blank"
 					rel="noreferrer"
