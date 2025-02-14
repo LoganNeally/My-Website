@@ -1,6 +1,17 @@
 <script lang="ts">
 	import '../app.postcss';
 	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
+	import { Avatar } from '@skeletonlabs/skeleton';
+
+	// Icons
+	import IconMenu from 'lucide-svelte/icons/menu';
+	import IconFolder from 'lucide-svelte/icons/folder';
+	import IconImage from 'lucide-svelte/icons/image';
+	import IconMusic from 'lucide-svelte/icons/music';
+	import IconVideo from 'lucide-svelte/icons/video';
+	import IconSettings from 'lucide-svelte/icons/settings';
+
+	let currentTile = 0;
 
 	// Highlight JS
 	import hljs from 'highlight.js/lib/core';
@@ -20,7 +31,8 @@
 	// Floating UI for Popups
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
 	import { storePopup } from '@skeletonlabs/skeleton';
-	import Computericon from '$lib/components/Computericon.svelte';
+	import Linkedinicon from '$lib/components/linkedinicon.svelte';
+
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 </script>
 
@@ -28,24 +40,32 @@
 <AppShell>
 	<svelte:fragment slot="header">
 		<!-- App Bar -->
-		<AppBar>
+		<AppBar gridColumns="grid-cols-3" slotDefault="place-self-center" slotTrail="place-content-end">
 			<svelte:fragment slot="lead">
-				<strong style="color:chocolate;" class="text-xl uppercase flex gap-2"
-					>loganneallyit.net <Computericon size={30}></Computericon></strong
-				>
+				<strong>loganneallyit.net</strong>
 			</svelte:fragment>
+
+			<Avatar
+				src="https://avatars.githubusercontent.com/u/168244652?v=4"
+				width="w-20"
+				rounded="rounded-full"
+				border="border-4 border-surface-300-600-token hover:!border-primary-500"
+				cursor="cursor-pointer"
+			/>
+
 			<svelte:fragment slot="trail">
 				<a
-					class="btn btn-sm variant-ghost-secondary"
-					href="https://github.com/LoganNeally"
+					class="btn btn-sm"
+					href="https://www.linkedin.com/in/logan-neally-44a7342a6"
 					target="_blank"
 					rel="noreferrer"
 				>
-					GitHub
+					<Linkedinicon size={70}></Linkedinicon>
 				</a>
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
+
 	<!-- Page Route Content -->
 	<slot />
 </AppShell>
