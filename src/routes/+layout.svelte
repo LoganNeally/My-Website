@@ -2,7 +2,6 @@
 	import '../app.postcss';
 	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
 	import { Avatar } from '@skeletonlabs/skeleton';
-
 	// Icons
 	import IconMenu from 'lucide-svelte/icons/menu';
 	import IconFolder from 'lucide-svelte/icons/folder';
