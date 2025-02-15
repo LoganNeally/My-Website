@@ -48,7 +48,7 @@
 				src="https://avatars.githubusercontent.com/u/168244652?v=4"
 				width="w-20"
 				rounded="rounded-full"
-				border="border-4 border-surface-300-600-token hover:!border-primary-500"
+				border="border-4 border-surface-300-600-token hover:!border-primary-400"
 				cursor="cursor-pointer"
 			/>
 
