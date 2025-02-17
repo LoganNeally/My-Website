@@ -1,15 +1,15 @@
 <script lang="ts">
 	import '../app.postcss';
-	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
+	import {
+		AppShell,
+		AppBar,
+		autoModeWatcher,
+		type PopupSettings,
+		popup
+	} from '@skeletonlabs/skeleton';
 	import { Avatar } from '@skeletonlabs/skeleton';
-	// Icons
-	import IconMenu from 'lucide-svelte/icons/menu';
-	import IconFolder from 'lucide-svelte/icons/folder';
-	import IconImage from 'lucide-svelte/icons/image';
-	import IconMusic from 'lucide-svelte/icons/music';
-	import IconVideo from 'lucide-svelte/icons/video';
-	import IconSettings from 'lucide-svelte/icons/settings';
-
+	import { LightSwitch } from '@skeletonlabs/skeleton';
+	import Sidebar from '$lib/components/Sidebar.svelte';
 	let currentTile = 0;
 
 	// Highlight JS
@@ -31,8 +31,17 @@
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
 	import { storePopup } from '@skeletonlabs/skeleton';
 	import Linkedinicon from '$lib/components/linkedinicon.svelte';
-
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
+	const popupFeatured: PopupSettings = {
+		// Represents the type of event that opens/closed the popup
+		event: 'click',
+		// Matches the data-popup value on your popup element
+		target: 'popupFeatured',
+		// Defines which side of your trigger the popup will appear
+		placement: 'bottom'
+	};
+
+	// Checkout Installation Guide for more details regarding the following imports
 </script>
 
 <!-- App Shell -->
@@ -41,7 +50,9 @@
 		<!-- App Bar -->
 		<AppBar gridColumns="grid-cols-3" slotDefault="place-self-center" slotTrail="place-content-end">
 			<svelte:fragment slot="lead">
-				<strong>loganneallyit.net</strong>
+				<div class="flex flex-row gap-3">
+					<strong>loganneallyit.net</strong>
+				</div>
 			</svelte:fragment>
 
 			<Avatar
@@ -53,18 +64,16 @@
 			/>
 
 			<svelte:fragment slot="trail">
-				<a
-					class="btn btn-sm"
-					href="https://www.linkedin.com/in/logan-neally-44a7342a6"
-					target="_blank"
-					rel="noreferrer"
-				>
-					<Linkedinicon size={70}></Linkedinicon>
-				</a>
+				<div>
+					<LightSwitch></LightSwitch>
+				</div>
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
 
 	<!-- Page Route Content -->
+
+	<Sidebar></Sidebar>
+
 	<slot />
 </AppShell>
