@@ -20,7 +20,7 @@
 				'[background-repeat:repeat] [background-size:150px_150px] [height:1000vh] [inset:0%_0px] [margin-left:-50%] [transform-origin:100%_0_0] [width:1000vw]',
 
 				// Light Styles
-				'[background-image:linear-gradient(to_right,rgba(250,250,250,100)_1px,transparent_0),linear-gradient(to_bottom,rgba(250,250,250,100)_1px,transparent_0)]',
+				'[background-image:linear-gradient(to_right,rgba(0,0,0,1)_1px,transparent_0),linear-gradient(to_bottom,rgba(0,0,0,1)_1px,transparent_0)]',
 
 				// Dark styles
 				'dark:[background-image:linear-gradient(to_right,rgba(250,140,1,100)_1px,transparent_0),linear-gradient(to_bottom,rgba(250,140,1,100)_3px,transparent_0)]'

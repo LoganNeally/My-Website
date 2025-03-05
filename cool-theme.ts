@@ -5,7 +5,7 @@ export const myCustomTheme: CustomThemeConfig = {
     name: 'my-custom-theme',
     properties: {
 		// =~= Theme Properties =~=
-		"--theme-font-family-base": `system-ui`,
+		"--theme-font-family-base": `serif`,
 		"--theme-font-family-heading": `system-ui`,
 		"--theme-font-color-base": "0 0 0",
 		"--theme-font-color-dark": "var(--color-primary-100)",

@@ -17,7 +17,7 @@
 	}
 </script>
 
-<div class="card border-surface-900 grid h-full w-full grid-cols-[auto_1fr] border-[1px]">
+<div class="card grid h-full w-full">
 	<nav class="list-nav flex flex-col justify-between h-full p-6">
 		<ul class="flex flex-col items-start">
 			<li>

@@ -52,6 +52,8 @@
 	};
 
 	// Checkout Installation Guide for more details regarding the following imports
+
+	import RetroGrid from '$lib/components/RetroGrid.svelte';
 </script>
 
 <Drawer>
@@ -59,18 +61,20 @@
 </Drawer>
 
 <!-- App Shell -->
-<AppShell slotSidebarLeft="w-0 md:w-52 bg-surface-500/10">
+<AppShell slotSidebarLeft="w-0 md:w-52">
 	<svelte:fragment slot="sidebarLeft">
 		<Navigation />
 	</svelte:fragment>
 
 	<svelte:fragment slot="header">
 		<!-- App Bar -->
+
 		<div>
 			<AppBar
 				gridColumns="grid-cols-3"
 				slotDefault="place-self-center"
 				slotTrail="place-content-end"
+				class="shadow-lg"
 			>
 				<svelte:fragment slot="lead">
 					<div class="flex flex-row">
@@ -109,4 +113,23 @@
 	<div class="container p-10 mx-auto">
 		<slot />
 	</div>
+
+	<svelte:fragment slot="pageFooter">
+		<div class="flex flex-1">
+			<div
+				class="h-[20rem] w-full rounded-md flex md:items-center md:justify-center antialiased bg-grid-white/[0.02] relative overflow-hidden"
+			>
+				<div>
+					<RetroGrid />
+				</div>
+
+				<div class="max-w-7xl mx-auto relative z-10 w-full">
+					<h6 class="text-4xl md:text-5xl text-center">
+						“Sometimes it's not enough to know what things mean, sometimes you have to know what
+						things don't mean.” <br /> -Bob Dylan
+					</h6>
+				</div>
+			</div>
+		</div>
+	</svelte:fragment>
 </AppShell>
