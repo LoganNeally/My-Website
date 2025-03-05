@@ -5,11 +5,21 @@
 		AppBar,
 		autoModeWatcher,
 		type PopupSettings,
-		popup
+		popup,
+		Drawer,
+		initializeStores,
+		getDrawerStore
 	} from '@skeletonlabs/skeleton';
+	initializeStores();
+	const drawerStore = getDrawerStore();
+
+	function drawerOpen(): void {
+		drawerStore.open();
+	}
+
 	import { Avatar } from '@skeletonlabs/skeleton';
 	import { LightSwitch } from '@skeletonlabs/skeleton';
-	import Sidebar from '$lib/components/Sidebar.svelte';
+
 	let currentTile = 0;
 
 	// Highlight JS
@@ -30,7 +40,7 @@
 	// Floating UI for Popups
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
 	import { storePopup } from '@skeletonlabs/skeleton';
-	import Linkedinicon from '$lib/components/linkedinicon.svelte';
+	import Navigation from '$lib/components/Navigation.svelte';
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 	const popupFeatured: PopupSettings = {
 		// Represents the type of event that opens/closed the popup
@@ -44,36 +54,59 @@
 	// Checkout Installation Guide for more details regarding the following imports
 </script>
 
+<Drawer>
+	<Navigation />
+</Drawer>
+
 <!-- App Shell -->
-<AppShell>
+<AppShell slotSidebarLeft="w-0 md:w-52 bg-surface-500/10">
+	<svelte:fragment slot="sidebarLeft">
+		<Navigation />
+	</svelte:fragment>
+
 	<svelte:fragment slot="header">
 		<!-- App Bar -->
-		<AppBar gridColumns="grid-cols-3" slotDefault="place-self-center" slotTrail="place-content-end">
-			<svelte:fragment slot="lead">
-				<div class="flex flex-row gap-3">
-					<strong>loganneallyit.net</strong>
-				</div>
-			</svelte:fragment>
+		<div>
+			<AppBar
+				gridColumns="grid-cols-3"
+				slotDefault="place-self-center"
+				slotTrail="place-content-end"
+			>
+				<svelte:fragment slot="lead">
+					<div class="flex flex-row">
+						<button class="md:hidden btn btn-sm" on:click={drawerOpen}>
+							<span>
+								<svg viewBox="0 0 100 80" class="fill-token w-4 h-4">
+									<rect width="100" height="20" />
+									<rect y="30" width="100" height="20" />
+									<rect y="60" width="100" height="20" />
+								</svg>
+							</span>
+						</button>
 
-			<Avatar
-				src="https://avatars.githubusercontent.com/u/168244652?v=4"
-				width="w-20"
-				rounded="rounded-full"
-				border="border-4 border-surface-300-600-token hover:!border-primary-400"
-				cursor="cursor-pointer"
-			/>
+						<strong>loganneallyit.net</strong>
+					</div>
+				</svelte:fragment>
 
-			<svelte:fragment slot="trail">
-				<div>
-					<LightSwitch></LightSwitch>
-				</div>
-			</svelte:fragment>
-		</AppBar>
+				<Avatar
+					src="https://avatars.githubusercontent.com/u/168244652?v=4"
+					width="w-20"
+					rounded="rounded-full"
+					border="border-4 border-surface-300-600-token hover:!border-primary-400"
+					cursor="cursor-pointer"
+				/>
+
+				<svelte:fragment slot="trail">
+					<div>
+						<LightSwitch></LightSwitch>
+					</div>
+				</svelte:fragment>
+			</AppBar>
+		</div>
 	</svelte:fragment>
 
 	<!-- Page Route Content -->
-
-	<Sidebar></Sidebar>
-
-	<slot />
+	<div class="container p-10 mx-auto">
+		<slot />
+	</div>
 </AppShell>
