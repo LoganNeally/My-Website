@@ -5,10 +5,10 @@ export const myCustomTheme: CustomThemeConfig = {
     name: 'my-custom-theme',
     properties: {
 		// =~= Theme Properties =~=
-		"--theme-font-family-base": `serif`,
+		"--theme-font-family-base": `mono`,
 		"--theme-font-family-heading": `system-ui`,
-		"--theme-font-color-base": "0 0 0",
-		"--theme-font-color-dark": "var(--color-primary-100)",
+		"--theme-font-color-base": "82 7 11",
+		"--theme-font-color-dark": "var(--color-primary-200)",
 		"--theme-rounded-base": "4px",
 		"--theme-rounded-container": "4px",
 		"--theme-border-base": "1px",

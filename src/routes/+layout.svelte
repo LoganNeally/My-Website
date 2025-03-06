@@ -88,7 +88,7 @@
 							</span>
 						</button>
 
-						<strong>loganneallyit.net</strong>
+						<strong class="hidden lg:block">loganneallyit.net</strong>
 					</div>
 				</svelte:fragment>
 

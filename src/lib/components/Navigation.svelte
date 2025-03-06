@@ -24,9 +24,6 @@
 				<a class="gap-2 flex items-center" href="/" on:click={drawerClose}>
 					Home <Binary />
 				</a>
-				<a class="gap-2 flex items-center" href="/About" on:click={drawerClose}>
-					About <ShieldQuestion />
-				</a>
 			</li>
 			<li>
 				<a class="gap-2 flex items-center" href="/Certifications" on:click={drawerClose}>
