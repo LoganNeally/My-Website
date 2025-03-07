@@ -45,7 +45,10 @@
 					I have a keen interest in digital forensics, SOAR implementations, and threat
 					intelligence, and I’m always exploring new technologies to improve security operations.
 				</p>
-				<p class="p-4">Feel free to explore my work, and let’s connect!</p>
+				<p class="p-4">
+					Feel free to explore my work, and let’s connect! My Linkedin and Github are attached to
+					the sidebar of this website.
+				</p>
 			</article>
 		</div>
 		<hr class="!border-t-2 opacity-50" />
@@ -74,7 +77,7 @@
 		<hr class="!border-t-2 opacity-50" />
 		<footer class="p-4 flex justify-start items-center space-x-4">
 			<div class="flex-auto flex justify-between items-center">
-				<a class="btn btn-sm variant-soft-primary" href="/Projects/Soar">Soar Project</a>
+				<a class="btn btn-sm variant-soft-primary" href="/Projects/Soar">SOAR Project</a>
 				<small>2/18/2025</small>
 			</div>
 		</footer>

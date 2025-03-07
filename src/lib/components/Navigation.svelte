@@ -55,7 +55,7 @@
 				target="Github"
 				rel="noopener noreferrer"
 			>
-				<Github />
+				<Github /> Github
 			</a>
 			<a
 				class="gap-2 flex-auto"
@@ -63,7 +63,7 @@
 				target="Linkedin"
 				rel="noopener noreferrer"
 			>
-				<Linkedin />
+				<Linkedin /> Linkedin
 			</a>
 		</div>
 	</nav>
