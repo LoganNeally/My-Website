@@ -17,8 +17,8 @@
 			</article>
 		</div>
 		<hr class="!border-t-2 opacity-50" />
-		<footer class="p-4 flex justify-start items-center space-x-4">
-			<div class="flex sm:flex-wrap justify-left items-center gap-4">
+		<footer class="p-4 incline-flex justify-start items-center space-x-4">
+			<div class="flex flex-wrap justify-left items-center gap-4">
 				<a class="btn btn-sm variant-soft-primary" href="https://svelte.dev">Svelte</a>
 				<a class="btn btn-sm variant-soft-primary" href="https://tailwindcss.com">Tailwindcss</a>
 				<a class="btn btn-sm variant-soft-primary" href="https://nodejs.org/en">Node.js</a>
