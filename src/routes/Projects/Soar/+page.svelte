@@ -3,7 +3,7 @@
 		<h2 class="h2 flex flex-auto">SOAR Automation Homelab</h2>
 		<hr class="!border-t-2 opacity-50" />
 	</div>
-	<div class="flex flex-auto gap-6">
+	<div class="flex flex-wrap gap-6">
 		<span class="badge variant-soft-primary">Wazuh</span>
 		<span class="badge variant-soft-primary">TheHive</span>
 		<span class="badge variant-soft-primary">Shuffle</span>
