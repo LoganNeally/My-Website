@@ -1,5 +1,7 @@
-<script>
+<script lang="ts">
+	import { TabGroup, Tab } from '@skeletonlabs/skeleton';
 	import { ShieldQuestion } from 'lucide-svelte';
+	let tabSet: number = 0;
 </script>
 
 <div class="grid grid-cols-1 md:grid-cols-2 auto-rows-fr gap-4">
@@ -29,9 +31,9 @@
 
 	<!-- Card 2 -->
 
-	<div class="block card card-hover row-span-2 p-10">
+	<div class="block card card-hover row-span-2 p-4">
 		<header></header>
-		<div class="p-4 space-y-4">
+		<div class="space-y-4">
 			<h3 class="h3 flex flex-auto gap-3 p-4" data-toc-ignore>
 				About Me <ShieldQuestion />
 			</h3>
@@ -52,10 +54,44 @@
 			</article>
 		</div>
 		<hr class="!border-t-2 opacity-50" />
-		<footer class="p-4 flex justify-start items-between space-x-4">
-			<div class="flex-auto flex justify-between items-center">
-				<h3 class="font-bold p-4" data-toc-ignore>Skills:</h3>
-			</div>
+		<footer class="flex justify-center items-center p-4">
+			<section class="card shadow-sm max-w-lg mx-auto justify-center gap-4 p-6">
+				<TabGroup>
+					<div class="flex flex-wrap justify-center gap-4">
+						<Tab bind:group={tabSet} name="tab1" value={0}>
+							<svelte:fragment slot="lead"></svelte:fragment>
+							<span>Management</span>
+						</Tab>
+						<Tab bind:group={tabSet} name="tab2" value={1}>Development</Tab>
+						<Tab bind:group={tabSet} name="tab3" value={2}>Technological</Tab>
+						<!-- Tab Panels --->
+					</div>
+					<svelte:fragment slot="panel">
+						{#if tabSet === 0}
+							<li>Team leadership</li>
+							<li>Adaptability</li>
+							<li>Active listening</li>
+							<li>Problem-solving</li>
+							<li>Risk assessment</li>
+							<li>Data analysis</li>
+						{:else if tabSet === 1}
+							<li>Python</li>
+							<li>CSS</li>
+							<li>HTML</li>
+							<li>Java Script</li>
+							<li>Svelte</li>
+							<li>Docker</li>
+						{:else if tabSet === 2}
+							<li>Networking</li>
+							<li>Malware Analysis</li>
+							<li>SOAR Experience</li>
+							<li>SIEM Experience</li>
+							<li>Forensics</li>
+							<li>Incident Response</li>
+						{/if}
+					</svelte:fragment>
+				</TabGroup>
+			</section>
 		</footer>
 	</div>
 	<!-- Card 3-->
