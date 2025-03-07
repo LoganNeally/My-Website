@@ -2,7 +2,7 @@
 	import { ShieldQuestion } from 'lucide-svelte';
 </script>
 
-<div class="grid grid-cols-2 grid-rows-2 gap-4">
+<div class="grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-4">
 	<div class="block card card-hover p-4">
 		<div class="p-4 space-y-12">
 			<h3 class="h3" data-toc-ignore>loganneallyit.net</h3>

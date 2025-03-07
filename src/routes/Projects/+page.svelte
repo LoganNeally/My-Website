@@ -4,7 +4,7 @@
 		<hr class="!border-t-2 opacity-50" />
 	</div>
 
-	<div class="grid grid-cols-2 grid-rows-2 gap-4">
+	<div class="grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-4">
 		<div class="block shadow-md card p-4">
 			<header></header>
 			<div class="p-4 space-y-4">
