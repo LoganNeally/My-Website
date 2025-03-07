@@ -88,7 +88,7 @@
 							</span>
 						</button>
 
-						<strong class="hidden lg:block">loganneallyit.net</strong>
+						<title class="title hidden lg:block">loganneallyit.net</title>
 					</div>
 				</svelte:fragment>
 
@@ -97,7 +97,6 @@
 					width="w-20"
 					rounded="rounded-full"
 					border="border-4 border-surface-300-600-token hover:!border-primary-400"
-					cursor="cursor-pointer"
 				/>
 
 				<svelte:fragment slot="trail">

@@ -1,3 +1,7 @@
+<script>
+	import { ShieldQuestion } from 'lucide-svelte';
+</script>
+
 <div class="grid grid-cols-2 grid-rows-2 gap-4">
 	<div class="block card card-hover p-4">
 		<div class="p-4 space-y-12">
@@ -28,7 +32,9 @@
 	<div class="block card card-hover row-span-2 p-10">
 		<header></header>
 		<div class="p-4 space-y-4">
-			<h3 class="h3 p-4" data-toc-ignore>About Me</h3>
+			<h3 class="h3 flex flex-auto gap-3 p-4" data-toc-ignore>
+				About Me <ShieldQuestion />
+			</h3>
 			<article>
 				<p class="p-4">
 					I am a cybersecurity student with a strong background in development, automation, and
@@ -49,12 +55,11 @@
 			</div>
 		</footer>
 	</div>
-
 	<!-- Card 3-->
 	<div class="block card card-hover p-4">
 		<header></header>
 		<div class="p-4 space-y-4">
-			<h6 class="h6" data-toc-ignore>Projects</h6>
+			<h6 class="h6" data-toc-ignore>Featured Project</h6>
 			<h3 class="h3" data-toc-ignore>SOAR Automation Homelab</h3>
 			<article>
 				<p>
@@ -70,6 +75,7 @@
 		<footer class="p-4 flex justify-start items-center space-x-4">
 			<div class="flex-auto flex justify-between items-center">
 				<a class="btn btn-sm variant-soft-primary" href="/Projects/Soar">Soar Project</a>
+				<small>2/18/2025</small>
 			</div>
 		</footer>
 	</div>

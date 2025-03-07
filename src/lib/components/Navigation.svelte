@@ -25,16 +25,7 @@
 					Home <Binary />
 				</a>
 			</li>
-			<li>
-				<a class="gap-2 flex items-center" href="/Certifications" on:click={drawerClose}>
-					Certifications <ShieldCheck />
-				</a>
-			</li>
-			<li>
-				<a class="gap-2 flex items-center" href="/Education" on:click={drawerClose}>
-					Education <GraduationCap />
-				</a>
-			</li>
+
 			<li>
 				<a class="gap-2 flex items-center" href="/Projects" on:click={drawerClose}>
 					Projects <FolderGit2 />
@@ -43,6 +34,16 @@
 			<li>
 				<a class="gap-2 flex items-center" href="/Work" on:click={drawerClose}>
 					Work <Briefcase />
+				</a>
+			</li>
+			<li>
+				<a class="gap-2 flex items-center" href="/Education" on:click={drawerClose}>
+					Education <GraduationCap />
+				</a>
+			</li>
+			<li>
+				<a class="gap-2 flex items-center" href="/Certifications" on:click={drawerClose}>
+					Certifications <ShieldCheck />
 				</a>
 			</li>
 		</ul>
