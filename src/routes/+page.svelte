@@ -2,7 +2,7 @@
 	import { ShieldQuestion } from 'lucide-svelte';
 </script>
 
-<div class="grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-4">
+<div class="grid grid-cols-1 md:grid-cols-2 auto-rows-fr gap-4">
 	<div class="block card card-hover p-4">
 		<div class="p-4 space-y-12">
 			<h3 class="h3" data-toc-ignore>loganneallyit.net</h3>
@@ -18,7 +18,7 @@
 		</div>
 		<hr class="!border-t-2 opacity-50" />
 		<footer class="p-4 incline-flex justify-start items-center space-x-4">
-			<div class="flex flex-wrap justify-left items-center gap-4">
+			<div class="flex flex-auto flex-wrap justify-left items-center gap-4">
 				<a class="btn btn-sm variant-soft-primary" href="https://svelte.dev">Svelte</a>
 				<a class="btn btn-sm variant-soft-primary" href="https://tailwindcss.com">Tailwindcss</a>
 				<a class="btn btn-sm variant-soft-primary" href="https://nodejs.org/en">Node.js</a>
