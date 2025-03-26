@@ -10,11 +10,9 @@
 			<h3 class="h3" data-toc-ignore>loganneallyit.net</h3>
 			<article>
 				<p>
-					<!-- cspell:disable -->
-					loganneallyit.net serves as a means for me to demonstrate my work and projects all from one
-					space. I built this website with the intention of sharing my projects and documenting my journey
-					in the cyber-industry. Built with SvelteKit and Skeleton UI.
-					<!-- cspell:enable -->
+					loganneallyit.net serves as a means for me to demonstrate my work and projects all from
+					one space. I built this website with the intention of sharing my projects and documenting
+					my journey in the cyber-industry. Built with SvelteKit and Skeleton UI.
 				</p>
 			</article>
 		</div>

@@ -16,6 +16,7 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      
       animation: {
         
 		grid: "grid 15s linear infinite",
