@@ -8,11 +8,11 @@
 		<div class="block shadow-md card p-4">
 			<header></header>
 			<div class="p-4 space-y-4">
-				<h3 class="h3" data-toc-ignore>Google Cybersecurity Professional Certificate</h3>
+				<h3 class="h3" data-toc-ignore>Akamai Network Engineering Professional Certificate</h3>
 				<article>
 					<p>
 						<!-- cspell:disable -->
-						In Progress.
+						Aquired in Febuary 2026
 						<!-- cspell:enable -->
 					</p>
 				</article>
@@ -21,7 +21,7 @@
 			<footer class="p-4 flex justify-start items-center space-x-4">
 				<div class="flex-auto flex justify-between items-center">
 					<a class="btn btn-sm variant-soft-primary" href="https://www.coursera.org/professional-certificates/google-cybersecurity">Google Cybersecurity</a>
-					<small>2025</small>
+					<small>2026</small>
 				</div>
 			</footer>
 		</div>
@@ -43,7 +43,7 @@
 					<a class="btn btn-sm variant-soft-primary" href="https://www.comptia.org/en-us/certifications/security/"
 						>Comptia Security+</a
 					>
-					<small>2025</small>
+					<small>2026</small>
 				</div>
 			</footer>
 		</div>
@@ -65,7 +65,7 @@
 					<a class="btn btn-sm variant-soft-primary" href="https://www.comptia.org/en-us/certifications/network/"
 						>Comptia Network+</a
 					>
-					<small>2025</small>
+					<small>2026</small>
 				</div>
 			</footer>
 		</div>

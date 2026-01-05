@@ -7,11 +7,11 @@
 		<div class="block shadow-md card p-4">
 			<header></header>
 			<div class="p-4 space-y-4">
-				<h3 class="h3" data-toc-ignore>Bell Creek Academy</h3>
+				<h3 class="h3" data-toc-ignore>Western Governors University</h3>
 				<article>
 					<p>
 						<!-- cspell:disable -->
-						High School
+						Bachelor of Science, Cloud and Network Engineering
 						<!-- cspell:enable -->
 					</p>
 				</article>
@@ -19,7 +19,7 @@
 			<hr class="!border-t-2 opacity-50" />
 			<footer class="p-4 flex justify-start items-center space-x-4">
 				<div class="flex-auto flex justify-between items-center">
-					<small>2017-2021</small>
+					<small>2027</small>
 				</div>
 			</footer>
 		</div>
@@ -38,7 +38,7 @@
 			<hr class="!border-t-2 opacity-50" />
 			<footer class="p-4 flex justify-start items-center space-x-4">
 				<div class="flex-auto flex justify-between items-center">
-					<small>2021-2025</small>
+					<small>2025</small>
 				</div>
 			</footer>
 		</div>
