@@ -13,11 +13,11 @@
 				<article>
 					<p>
 						<!-- cspell:disable -->
-						<li>•Handle cash in the registers and count the store’s safe.</li>
-						<li>•Provide customers with a welcoming environment and excellent service</li>
-						<li>•Ability to safely handle food and other products.</li>
-						<li>•Manage staff and labor during my shift.</li>
-						<li>•Ability to resolve issues regarding customers or employees while on my shift. 
+						<li>Handle cash in the registers and count the store’s safe.</li>
+						<li>Provide customers with a welcoming environment and excellent service</li>
+						<li>Ability to safely handle food and other products.</li>
+						<li>Manage staff and labor during my shift.</li>
+						<li>Ability to resolve issues regarding customers or employees while on my shift. 
 							</li>
 						<!-- cspell:enable -->
 					</p>
@@ -40,9 +40,9 @@
 				<article>
 					<p>
 						<!-- cspell:disable -->
-						<li>•Work to cash out customers at my local Winn Dixie supermarket.</li>
-						<li>•Provide customers with an enjoyable and pleasant shopping experience.</li>
-						<li>•Make sure I give the best customer service I possibly can.</li>
+						<li>Work to cash out customers at my local Winn Dixie supermarket.</li>
+						<li>Provide customers with an enjoyable and pleasant shopping experience.</li>
+						<li>Make sure I give the best customer service I possibly can.</li>
 
 						<!-- cspell:enable -->
 					</p>
