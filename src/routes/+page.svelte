@@ -111,7 +111,7 @@
 		<hr class="!border-t-2 opacity-50" />
 		<footer class="p-4 flex justify-start items-center space-x-4">
 			<div class="flex-auto flex justify-between items-center">
-				<a class="btn btn-sm variant-soft-primary" href="/Projects/Soar">SOAR Project</a>
+				<a class="btn btn-sm variant-soft-primary" href="https://github.com/LoganNeally/SOAR-Automation-Project">SOAR Project</a>
 				<small>2/18/2025</small>
 			</div>
 		</footer>
