@@ -21,7 +21,7 @@
 			<footer class="p-4 flex justify-start items-center space-x-4">
 				<div class="flex-auto flex justify-between items-center">
 					<a class="btn btn-sm variant-soft-primary" href=" ">Akamai Network Engineering Certificate</a>
-					<small>2026</small>
+					<small></small>
 				</div>
 			</footer>
 		</div>
@@ -43,7 +43,7 @@
 					<a class="btn btn-sm variant-soft-primary" href="https://www.comptia.org/en-us/certifications/security/"
 						>Comptia Security+</a
 					>
-					<small>2026</small>
+					<small></small>
 				</div>
 			</footer>
 		</div>
@@ -65,7 +65,7 @@
 					<a class="btn btn-sm variant-soft-primary" href="https://www.comptia.org/en-us/certifications/network/"
 						>Comptia Network+</a
 					>
-					<small>2026</small>
+					<small></small>
 				</div>
 			</footer>
 		</div>
